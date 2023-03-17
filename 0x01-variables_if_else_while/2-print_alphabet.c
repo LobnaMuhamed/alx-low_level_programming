@@ -14,10 +14,6 @@ int main(void)
 	{
 		putchar(ch);
 		ch++;
-		if (ch == 'z')
-		{
-			putchar("%c\n", ch);
-		}
 	}
 	return (0);
 }
