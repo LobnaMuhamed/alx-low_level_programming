@@ -8,21 +8,27 @@
 
 int main(void)
 {
-	int num = 0;
-
-	while (num < 90)
+	
+	int a, b;
+	for (a = '0' ; a < '9' ; a++)
 	{
-		if (num % 10 != num % 1)
+		for (b = '0' ; b <= '9' ; b++)
 		{
-			putchar(num);
-			if (num != 89)
+			if(a != b)
 			{
+				putchar(a);
+				putchar(b);
+			}
+			if (a == '8' && b == '9')
+			{
+				continue;
+			}
 			putchar(',');
 			putchar(' ');
-			}
 		}
-		num++;
+	
 	}
+	
 	putchar('\n');
 	return (0);
 }
