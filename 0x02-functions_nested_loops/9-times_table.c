@@ -26,6 +26,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		if (row != 9)
+			_putchar('\n');
 	}
 }
