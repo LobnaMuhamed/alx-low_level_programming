@@ -7,6 +7,8 @@
 
 int main(void)
 {
-	putchar("_putchar");
+	char string[] = "_putchar";
+
+	putchar(string[]);
 	return (0);
 }
