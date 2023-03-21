@@ -12,7 +12,9 @@ void times_table(void)
 		for (col = 0 ; col <= 9 ; col++)
 		{
 			result = row * col;
-			_putchar((result % 100) + '0');
+			if (result > 9){
+				_putchar((result / 10) + '0');
+			}
 			_putchar((result % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
