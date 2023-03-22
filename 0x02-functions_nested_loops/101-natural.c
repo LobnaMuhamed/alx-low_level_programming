@@ -9,12 +9,13 @@
 int main(void)
 {
 	int result, x;
+
 	for (x = 0 ; x < 1024 ; x++)
 	{
 		if (x % 3 == 0 || x % 5 == 0)
 		{
 			result++;
-		}	
+		}
 	}
 	printf("%d\n", result);
 	return (0);
