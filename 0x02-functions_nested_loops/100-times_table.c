@@ -14,7 +14,6 @@ void print_times_table(int n)
                                 _putchar((result / 10) + '0');
                         else if (result <= 9 && col != 0)
 			{ 	_putchar(' ');
-				_putchar(' ');
                 	}       
 			_putchar((result % 10) + '0');
                         if (col != n)
