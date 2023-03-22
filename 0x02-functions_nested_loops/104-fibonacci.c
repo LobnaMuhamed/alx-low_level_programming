@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 
-	/**
-	 * main - finds and prints the first 98 Fibonacci numbers
-	 *
-	 * Purpose - no hardcode
-	 *
-	 * Return:  (Success)
-	 */
+/**
+* main - finds and prints the first 98 Fibonacci numbers
+* Purpose - no hardcode
+* Return:  (Success)
+*/
 
 
 	int main(void)
