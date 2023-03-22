@@ -3,8 +3,5 @@
 
 int add(int a, int b)
 {
-	int c;
-	c = a + b;
-	return (c + '0');
-
+	return (a + b);
 }
