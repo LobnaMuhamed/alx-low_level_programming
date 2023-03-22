@@ -10,9 +10,9 @@ void print_times_table(int n)
                 for (col = 0 ; col <= n ; col++)
                 {
                         result = row * col;
-                        if (result > n)
+                        if (result > 9)
                                 _putchar((result / 10) + '0');
-                        else if (result <= n && col != 0)
+                        else if (result <= 9 && col != 0)
                                 _putchar(' ');
                         _putchar((result % 10) + '0');
                         if (col != n)
