@@ -17,7 +17,7 @@ int main(void)
 		j = k;
 		if (count == 49)
 		{
-			printf('\n');
+			putchar('\n');
 		}
 		else
 			printf(', ');
