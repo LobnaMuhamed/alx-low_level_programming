@@ -18,7 +18,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(',');
 			}
-			else if (result > 9 && resilt < 100 )
+			else if (result > 9 && result < 100 )
 			{
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
@@ -28,7 +28,7 @@ void print_times_table(int n)
 			}
 			else if (result > 100)
 			{
-				_putchar((rsult / 100) + '0');
+				_putchar((result / 100) + '0');
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
 			}
