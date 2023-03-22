@@ -21,6 +21,7 @@ int main(void)
 			sum += k;
 		}
 	}
+	printf("%lu\n", sums);
 	return (0);
 
 
