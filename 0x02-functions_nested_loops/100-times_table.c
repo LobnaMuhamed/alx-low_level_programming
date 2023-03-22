@@ -20,7 +20,8 @@ void print_times_table(int n)
                         if (col != n)
                         {
                                 _putchar(',');
-                                _putchar(' ');
+                          	_putchar(' ');
+			 	_putchar(' ');
                         }
                 }
                 _putchar('\n');
