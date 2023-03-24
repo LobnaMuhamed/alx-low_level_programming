@@ -15,11 +15,10 @@ int main(void)
 		while (num % count == 0)
 		{
 			printf("%d", count);
-			break;
-		}
-		num = num / count ;
-	}
+			num = num / count ;
 
+		}
+	}
 
 
 	return (0);
