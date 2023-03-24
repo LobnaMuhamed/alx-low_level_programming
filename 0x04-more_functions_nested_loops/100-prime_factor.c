@@ -15,8 +15,9 @@ int main(void)
 		while (num % count == 0)
 		{
 			printf("%d", count);
-			num = num / count;
+			break;
 		}
+		num = num / count ;
 	}
 
 
