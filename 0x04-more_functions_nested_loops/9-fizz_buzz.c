@@ -27,14 +27,10 @@ int main(void)
 		else
 		{
 			if (i != 100)
-			{
 				printf("%d ", i);
-			}
-			else
-				printf("%d", i);
 		}
 	}
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
