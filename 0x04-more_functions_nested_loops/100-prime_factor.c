@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	int num, count;
+	long int num, count;
 
 	for (count = 2 ; num > 1 ; count++)
 	{
 		while (num % count == 0)
 		{
-			printf("%d", count);
+			printf("%ld", count);
 			num = num / count;
 		}
 	}
