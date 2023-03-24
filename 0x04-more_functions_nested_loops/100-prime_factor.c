@@ -7,7 +7,8 @@
 
 int main(void)
 {
-	long int num, count;
+	long num = 612852475143;
+	int count;
 
 	for (count = 2 ; num > 1 ; count++)
 	{
