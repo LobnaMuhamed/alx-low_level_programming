@@ -19,7 +19,7 @@ char *cap_string(char *n)
 		    n[i - 1] == '\n' ||
 		    n[i - 1] == ',' ||
 		    n[i - 1] == ';' ||
-		    n[i - 1] == '\"' ||
+		    n[i - 1] == '"' ||
 		    n[i - 1] == '.' ||
 		    n[i - 1] == '!' ||
 		    n[i - 1] == ')' ||
@@ -32,7 +32,7 @@ char *cap_string(char *n)
 		{
 			n[i] = n[i] - 32;
 		}
-	i++;
+		i++;
 	}
 	return (n);
 
