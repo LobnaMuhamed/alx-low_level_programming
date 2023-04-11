@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		}
 		j++;
 	}
-	i++
+	i++;
 
 	}
 		for (i = 1 ; i < argc ; i++)
