@@ -2,19 +2,15 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * Return: return 0 (Successful)
+*/
 
 int main(void)
 {
-	int num = 0;
+	int i;
 
-	while (num <= 9)
-	{
-		putchar(num + '0');
-		num++;
-	}
+	for (i = 0 ; i <= 9 ; i++)
+		putchar(i + '\0');
 	putchar('\n');
 	return (0);
 }
