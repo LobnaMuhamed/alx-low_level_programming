@@ -7,22 +7,16 @@
 
 int main(void)
 {
-	char x = 'a';
-	char n = 'A';
+	char x, n;
 	int i;
 
-	for (i = 0 ; i < 52 ; i++)
+	for (x = 'a' ; x <= 'z' ; x++)
 	{
-		if (x >= 'a' && x <= 'z')
-		{
-			putchar(x);
-			x++;
-		}
-		if (n >= 'A' && n <= 'Z')
-		{
-			putchar(n);
-			n++;
-		}
+		putchar(x);
+	}
+	for (n = 'A' ; n <= 'Z' ; n++)
+	{
+		putchar(n);
 	}
 	putchar('\n');
 	return (0);
