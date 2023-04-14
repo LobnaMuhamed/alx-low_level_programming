@@ -35,6 +35,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (ch == NULL)
 		return (NULL);
-	_fun(ch, 0, size * nmemmb);
-	return (fun);
+	_fun(ch, 0, size * nmemb);
+	return (ch);
 }
