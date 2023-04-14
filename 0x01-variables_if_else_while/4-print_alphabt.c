@@ -2,22 +2,18 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * Return: return 0 (Successful)
+*/
+
 int main(void)
 {
-	char ch = 'a';
+	char x;
 
-	while (ch <= 'z')
+	for(x = 'a' ; x <= 'z' ; x++)
 	{
-		if (ch != 'q' && ch != 'e')
-		{
-			putchar(ch);
-		}
-		ch++;
+		if (x != 'q'&& x != 'e')
+			putchar(x);
 	}
 	putchar('\n');
 
-	return (0);
 }
