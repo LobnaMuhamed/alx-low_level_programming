@@ -10,7 +10,7 @@ int main(void)
 	char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int i;
 
-	for (i = 0 ; ch[i] != '\0';i++)
+	for (i = 0 ; ch[i] != '\0' ; i++)
 	{
 		putchar(ch[i]);
 	}
