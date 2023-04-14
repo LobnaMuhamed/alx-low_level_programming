@@ -2,20 +2,23 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * Return: return 0 (Successfull)
+*/
 
 int main(void)
 {
 	char ch = 'a';
+	int i;
 
-	while (ch <= 'z')
+	for (i = 0 ; i < 26 ; i++)
 	{
-		putchar(ch);
+		if (ch >= 'a' && ch <= 'z')
+		{
+			putchar(ch);
+		}
 		ch++;
 	}
 	putchar('\n');
+
 	return (0);
 }
-
