@@ -1,23 +1,26 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * Return: return 0 (Succesful)
+*/
+
 int main(void)
 {
-	char ch = 'a', ch2 = 'A';
+	char x = 'a';
+	char n = 'A';
+	int i;
 
-	while (ch <= 'z')
+	for (i = 0 ; i < 52 ; i++)
 	{
-		putchar(ch);
-		ch++;
-	}
-
-	while (ch2 <= 'Z')
-	{
-		putchar(ch2);
-		ch2++;
+		if (x >= 'a' && x <= 'z')
+		{
+			putchar(x);
+		}
+		if (n >= 'A' && n <= 'Z')
+		{
+			putchar(n);
+		}
 	}
 	putchar('\n');
 	return (0);
