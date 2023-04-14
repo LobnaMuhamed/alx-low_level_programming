@@ -5,19 +5,16 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char ch = 'a';
+	char num = '0';
 
-	while (ch <= 'z')
+	while (num <= '9')
 	{
-		if (ch != 'q' && ch != 'e')
-		{
-			putchar(ch);
-		}
-		ch++;
+		putchar(num);
+		num++;
 	}
 	putchar('\n');
-
 	return (0);
 }

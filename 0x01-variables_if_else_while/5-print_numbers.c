@@ -2,18 +2,16 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * Return: return 0 (Successful)
+*/
 
 int main(void)
 {
-	char num = '0';
+	int x;
 
-	while (num <= '9')
+	for (x = 0 ; x <= 9 ; x++)
 	{
-		putchar(num);
-		num++;
+		putchar(x);
 	}
 	putchar('\n');
 	return (0);
