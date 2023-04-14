@@ -1,11 +1,19 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
- * main - Prints out the last part of a quote in the standard error.
- * Return: 1 if success.
- */
+ * main - Entry point
+ * Return: return 0 (Successful)
+*/
+
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	return (1);
+	char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	int i;
+
+	for (i = 0 ; ch[i] != '\0';i++)
+	{
+		putchar(ch[i]);
+	}
+	putchar('\n');
+	return (0);
 }
