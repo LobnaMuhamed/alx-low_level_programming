@@ -16,10 +16,12 @@ int main(void)
 		if (x >= 'a' && x <= 'z')
 		{
 			putchar(x);
+			x++;
 		}
 		if (n >= 'A' && n <= 'Z')
 		{
 			putchar(n);
+			n++;
 		}
 	}
 	putchar('\n');
