@@ -2,33 +2,33 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * Return: return 0 (Successful)
+*/
 
 int main(void)
 {
-	int a, b, c;
+	int i, j, k;
 
-	for (a = '0' ; a < '9' ; a++)
+	for (i = 0 ; i <= 9 ; i++)
 	{
-		for (b = a + 1 ; b <= '9' ; b++)
+		for (j = i + 1 ; j <= 9 ; j++)
 		{
-			for (c = b + 1 ; c <= '9' ; c++)
+			for (k = j + 1 ; k <= 9 ; k++)
 			{
-				if (a != b && a != c && b != c)
-				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-				}
-				if (a == '7' && b == '8' && c == '9')
+				if (i == j && i == k)
 					continue;
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+
+				if (!(i == 7 && j == 8 && k == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
