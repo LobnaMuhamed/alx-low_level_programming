@@ -7,14 +7,15 @@
 
 int main(void)
 {
-	unsigned long long int x, y, k, i;
+	unsigned long int x, y, k, i;
 
 	x = 1;
 	y = 2;
 	for (i = 0 ; i < 4000000 ; ++i)
 	{
 		k = x + y;
-		printf("%llu", k);
+		if (k % 2 == 0)
+			printf("%lu", k);
 		x = y;
 		y = k;
 	}
