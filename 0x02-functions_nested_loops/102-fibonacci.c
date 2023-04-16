@@ -11,10 +11,7 @@ int main(void)
 
 	for (x = 0 ; x < 50 ; x++)
 	{
-		for (y = x ; y < 50 ; y++)
-		{
-			printf("%d, ", x + y);
-		}
+		printf("%d, ", x + x);
 	}
 	return (0);
 }
