@@ -12,17 +12,15 @@ int main(void)
 
 	x = 0;
 	j = 1;
-	printf("%d, ", x);
-	printf("%d, ", j);
 	for (i = 0 ; i < 50 ; ++i)
 	{
-		if (i == 49)
-			printf("%d", y);
-		else
-			printf("%d, ", y);
+		y = x + j;
 		x = j;
 		j = y;
-		y = x + j;
+		if (i == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
 	return (0);
 }
