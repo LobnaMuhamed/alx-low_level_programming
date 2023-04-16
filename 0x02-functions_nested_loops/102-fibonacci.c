@@ -14,9 +14,9 @@ int main(void)
 	j = 1;
 	printf("%d, ", x);
 	printf("%d, ", j);
-	for (i = 3 ; i <= 50 ; ++i)
+	for (i = 0 ; i < 50 ; ++i)
 	{
-		if (i == 50)
+		if (i == 49)
 			printf("%d", y);
 		else
 			printf("%d, ", y);
