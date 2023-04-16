@@ -42,8 +42,9 @@ if (!(n > 15 || n < 0))
 		}
 		else
 			_putchar(m % 10 + '0');
-		_putchar('\n');
 		}
+		_putchar('\n');
+		
 	}
 }
 }
