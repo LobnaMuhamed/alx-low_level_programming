@@ -16,4 +16,5 @@ int main(void)
 			printf("%d, ", x + y);
 		}
 	}
+	return (0);
 }
