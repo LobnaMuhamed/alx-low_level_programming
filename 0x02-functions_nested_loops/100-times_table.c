@@ -42,9 +42,8 @@ if (!(n > 15 || n < 0))
 		}
 		else
 			_putchar(m % 10 + '0');
-		printf("\n");
+		_putchar('\n');
 		}
 	}
-	printf("\n");
 }
 }
