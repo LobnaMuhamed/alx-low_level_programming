@@ -19,12 +19,12 @@ void times_table(void)
 				if (m <= 9)
 					_putchar(' ');
 			}
-			
+
 			if (m > 9)
 				_putchar((m / 10) + '0');
 
 			_putchar((m % 10) + '0');
-			
+
 			if (y != 9)
 			{
 				_putchar(',');
