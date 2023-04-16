@@ -12,10 +12,10 @@ int main(void)
 
 	x = 1;
 	y = 2;
-	for (i = 0 ; i < 4000000 ; ++i)
+	for (i = 0 ; i < 50 ; ++i)
 	{
 		k = x + y;
-		if (k % 2 == 0)
+		if (k % 2 == 0 && k < 4000000)
 			sum += k;
 		x = y;
 		y = k;
