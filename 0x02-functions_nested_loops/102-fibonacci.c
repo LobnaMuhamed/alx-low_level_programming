@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i, x, j, y;
+	unsigned int i, x, j, y;
 
 	x = 0;
 	j = 1;
@@ -17,6 +17,7 @@ int main(void)
 		y = x + j;
 		x = j;
 		j = y;
+		printf("%lu", y);
 		if (i == 49)
 			printf("\n");
 		else
