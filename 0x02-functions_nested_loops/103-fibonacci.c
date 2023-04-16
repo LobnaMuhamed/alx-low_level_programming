@@ -7,7 +7,8 @@
 
 int main(void)
 {
-	unsigned long int x, y, k, i;
+	unsigned long int x, y, k, i, sum;
+	sum = 0;
 
 	x = 1;
 	y = 2;
@@ -15,9 +16,10 @@ int main(void)
 	{
 		k = x + y;
 		if (k % 2 == 0)
-			printf("%lu", k);
+			sum += k;
 		x = y;
 		y = k;
 	}
+	printf("%lu", sum);
 	return (0);
 }
