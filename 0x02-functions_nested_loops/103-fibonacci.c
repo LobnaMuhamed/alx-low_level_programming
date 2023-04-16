@@ -1,28 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Fibonacci sequence
- * Return: Always 0 (Success)
- */
+ * main - Entry point
+ * Return: return 0 (Successful)
+*/
 
 int main(void)
 {
-	unsigned long count, i, j, k, sum;
+	unsigned long long int x, y, k, i;
 
-	i = sum = 0;
-	j = 1;
-	for (count = 0 ; count < 50 ; count++)
+	x = 1;
+	y = 2;
+	for (i = 0 ; i < 4000000 ; ++i)
 	{
-		k = i + j;
-		i = j;
-		j = k;
-		if (k % 2 == 0 && k < 4000000)
-		{
-			sum += k;
-		}
+		k = x + y;
+		printf("%llu", k);
+		x = y;
+		y = k;
 	}
-	printf("%lu\n", sum);
 	return (0);
-
-
 }
