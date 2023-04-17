@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0 ; i < 98 ; ++i)
 	{
 		k = x + y;
-		printf("%u, ", k);
+		printf("%lu, ", k);
 		x = y;
 		y = k;
 	}
