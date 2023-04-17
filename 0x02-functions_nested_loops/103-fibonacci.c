@@ -10,9 +10,9 @@ int main(void)
 	unsigned long int x, y, k, i, sum;
 	sum = 0;
 
-	x = 1;
-	y = 2;
-	for (i = 0 ; i <= 50 ; ++i)
+	x = 0;
+	y = 1;
+	for (i = 0 ; i < 50 ; ++i)
 	{
 		k = x + y;
 		if (k % 2 == 0 && k < 4000000)
