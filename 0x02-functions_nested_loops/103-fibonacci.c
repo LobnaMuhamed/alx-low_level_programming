@@ -8,6 +8,7 @@
 int main(void)
 {
 	unsigned long int x, y, k, i, sum;
+
 	sum = 0;
 
 	x = 0;
@@ -20,6 +21,6 @@ int main(void)
 		x = y;
 		y = k;
 	}
-	printf("%lu", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
