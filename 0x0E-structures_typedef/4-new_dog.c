@@ -1,12 +1,12 @@
 #include "dog.h"
-
+#include <stdlib.h>
 /**
  * cpy - a function copy string to another
  * @to: input value
  * @from: input value
  * Return: return value
 */
-char *cpy(char to, char from)
+char *cpy(char *to, char *from)
 {
 	int x, y;
 
@@ -14,9 +14,9 @@ char *cpy(char to, char from)
 	y = 0;
 	while (from[x] != '\0')
 		x++;
-	for (; y <= x ; y++)
+	for (; y < x ; y++)
 		to[y] = from[y];
-	to[y] = '\0';
+	to[x] = '\0';
 	return (to);
 }
 /**
@@ -24,7 +24,7 @@ char *cpy(char to, char from)
  * @ch: input valeu
  * Return: return value
 */
-int *len(char *ch)
+int len(char *ch)
 {
 	int x;
 
@@ -42,7 +42,7 @@ int *len(char *ch)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog *dog;
+	dog_t *dog;
 
 	int x, y;
 
