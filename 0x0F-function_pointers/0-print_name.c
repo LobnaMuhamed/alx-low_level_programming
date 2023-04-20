@@ -1,16 +1,16 @@
 #include "function_pointers.h"
-#include <stdio.h>
+
 /**
- * print_name -  a function that prints a name
+ * print_name - a function that prints a name
  * @name: input value
- * @f: input value
- * #n: input value
+ * @f: array af pointers
 */
 
-void print_name(char *name, void (*f)(char *n))
+void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL || f == NULL)
 		return;
+	else
 	f(name);
 
 }
