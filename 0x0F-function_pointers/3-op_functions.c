@@ -1,6 +1,5 @@
-
 /**
- * op_add - Add two numbers 
+ * op_add - Add two numbers
  * @a: input value
  * @b: input value
  * Return: return result

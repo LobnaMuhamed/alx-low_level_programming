@@ -4,7 +4,9 @@
 #include <stdlib.h>
 
 /**
- * Entry point
+ * main -  Entry point
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  * Return: return 0 (Successful)
 */
 int main(int argc, char *argv[])
