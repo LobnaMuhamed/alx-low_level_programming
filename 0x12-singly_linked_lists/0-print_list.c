@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -10,33 +10,19 @@
 size_t print_list(const list_t *h)
 {
 	size_t n = 0;
-	char *s1 = "[0] (nil)";
 
 	if (h == NULL)
 		return (0);
 
 	while (h)
 	{
-		if (h->str == NULL)
+		if (!h->str)
 		{
-			while (*s1)
-			{
-				_putchar(*s1);
-				s1++;
-			}
-			_putchar('\n');
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-			_putchar('[');
-			_putchar(h->len);
-			_putchar(']');
-			_putchar(' ');
-			while (h->str)
-			{
-				_putchar(*(h->str));
-			}
-			_putchar('\n');
+			printf("[%u] %s\n", h->len, h->str);
 		}
 		h = h->next;
 		n++;
