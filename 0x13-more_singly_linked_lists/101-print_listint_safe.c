@@ -22,8 +22,8 @@ size_t print_listint_safe(const listint_t *head)
 				printf("-> [%p] %d\n", (void *)temp, temp->n);
 				return (len);
 			}
-		len++;
 		arr[len] = temp;
+		len++;
 
 		printf("[%p] %d\n", (void *)temp, temp->n);
 		temp = temp->next;
