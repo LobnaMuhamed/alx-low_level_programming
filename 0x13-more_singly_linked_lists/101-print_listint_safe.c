@@ -12,8 +12,10 @@ size_t print_listint_safe(const listint_t *head)
 	size_t len = 0, i;
 
 	if (!head)
+	{
+		printf("0\n");
 		exit(98);
-
+	}
 	while (temp)
 	{
 		for (i = 0; i < len; i++)
