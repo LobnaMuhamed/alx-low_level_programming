@@ -8,24 +8,23 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *temp = head;
 	listint_t *arr[1024];
-	size_t len = 0, i;
+	size_t i, j = 0;
 
 	if (!head)
 	{
 		return (NULL);
 	}
-	while (temp)
+	while (head)
 	{
-		for (i = 0 ; i < len ; i++)
-			if (arr[i] == temp)
+		for (i = 0 ; i < j ; i++)
+			if (arr[i] == head)
 			{
-				return (temp);
+				return (head);
 			}
-		arr[len] = temp;
-		len++;
-		temp = temp->next;
+		arr[j] = head;
+		head = head->next;
+		j++;
 	}
-	return (temp);
+	return (head);
 }
