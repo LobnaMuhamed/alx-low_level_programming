@@ -34,11 +34,10 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	else if (!n)
+	if (!n)
 	{
-		return;
+		_putchar('0');
 	}
-
 	while (temp > 0)
 	{
 		temp >>= 1;
