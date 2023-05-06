@@ -7,9 +7,9 @@
  * Return: return the result
 */
 
-unsigned int pown(unsigned int num, unsigned int i)
+unsigned long int pown(unsigned long int num, unsigned long int i)
 {
-	unsigned int j = 0, result = 1;
+	unsigned long int j = 0, result = 1;
 
 	while (j < i)
 	{
@@ -32,6 +32,7 @@ void print_binary(unsigned long int n)
 	if (n == 0)
 	{
 		_putchar('0');
+		return;
 	}
 	while (temp > 0)
 	{
