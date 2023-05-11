@@ -14,7 +14,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	else
+	else if (text_content != NULL)
 	{
 		if (dprintf(fileno(fptr), "%s", text_content) < 0)
 		{
