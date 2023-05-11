@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <sys/stat.h>
+#include "main.h"
 /**
  * create_file - a function that creates a file
  * @filename: a name of file that should be created
