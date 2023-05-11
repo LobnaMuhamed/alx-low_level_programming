@@ -21,9 +21,7 @@ int append_text_to_file(const char *filename, char *text_content)
 			fclose(fptr);
 			return (-1);
 		}
-		if (chmod(filename, S_IRUSR || S_IWUSR) == -1)
-			return (-1);
-		fclose(fptr);
 	}
+	fclose(fptr);
 	return (1);
 }
