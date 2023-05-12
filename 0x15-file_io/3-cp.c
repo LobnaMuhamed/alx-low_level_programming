@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 		print_error("Can't read from file", argv[1]);
 		exit(98);
 	}
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 06640);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 6640);
 	if (file_to == -1)
 	{
 		print_error("Can't write to", argv[2]);
