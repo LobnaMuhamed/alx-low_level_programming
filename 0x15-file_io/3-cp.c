@@ -49,14 +49,12 @@ int main(int argc, char **argv)
 	r_bytes = write(file_to, buffer, r_bytes);
 	if (close(file_from) == -1)
 	{
-		perror("Error");
-		fprintf(stderr, "Error: Can't close fd %d\n", file_from);
+		print_error("Can't close fd", strerror(errno));
 		exit(100);
 	}
 	if (close(file_to) == -1)
 	{
-		perror("Error");
-		fprintf(stderr, "Error: Can't close fd %d\n", file_to);
+		print_error("Can't close fd", strerror(errno));
 		exit(100);
 	}
 	return (0);
