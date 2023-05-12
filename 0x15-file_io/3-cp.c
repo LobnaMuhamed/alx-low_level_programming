@@ -17,9 +17,10 @@ void print_error(char *mess, char *filename)
 * Return: return 0 if success
 */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int file_to, file_from, r_bytes;
+	int file_to, file_from;
+	ssize_t r_bytes;
 	char *buffer;
 
 	if (argc != 3)
@@ -47,12 +48,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	r_bytes = write(file_to, buffer, r_bytes);
-	if (close(file_from) == -1)
-	{
-		print_error("Can't close fd", strerror(errno));
-		exit(100);
-	}
-	if (close(file_to) == -1)
+	if (close(file_from) == -1 || close(file_to) == -1)
 	{
 		print_error("Can't close fd", strerror(errno));
 		exit(100);
