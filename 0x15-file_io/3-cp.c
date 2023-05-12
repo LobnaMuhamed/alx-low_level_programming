@@ -7,7 +7,9 @@
 */
 
 void print_error(char *mess, char *filename)
+{
 	dprintf(STDERR_FILENO, "Error: %s %s\n", mess, filename);
+}
 /**
 * main - Entry point
 * @argc: count of arguments
