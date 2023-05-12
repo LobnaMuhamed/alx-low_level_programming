@@ -58,6 +58,5 @@ int main(int argc, char **argv)
 		perror("Error");
 		fprintf(stderr, "Error: Can't close fd %d\n", file_to);
 	}
-	free(buffer);
 	return (0);
 }
