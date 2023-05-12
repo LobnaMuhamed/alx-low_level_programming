@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (file_to == -1)
 	{
-		print_error("Can't write to", argv[2]);
+		print_error("Can't write to file", argv[2]);
 		exit(99);
 	}
 	buffer = malloc(sizeof(char) * BUFSIZ);
