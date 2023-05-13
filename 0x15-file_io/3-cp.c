@@ -11,9 +11,9 @@
 void print_error(char *mess, char *filename, int num, char *buff)
 {
 	dprintf(STDERR_FILENO, "%s %s\n", mess, filename);
-	exit(num);
 	if (buff)
 		free(buff);
+	exit(num);
 }
 /**
 * main - Entry point
@@ -46,5 +46,6 @@ int main(int argc, char **argv)
 		print_error("Error: Can't close fd", strerror(errno), 100, buffer);
 	if (close(file_to) == -1)
 		print_error("Error: Can't close fd", strerror(errno), 100, buffer);
+	free(buffer);
 	return (0);
 }
