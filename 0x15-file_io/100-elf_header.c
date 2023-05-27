@@ -24,7 +24,7 @@ void close_elf(int elf);
 
 /**
  * chk_elf - a function that check if file elf
- * @e_idt: string input 
+ * @e_idt: string input
  *
  */
 void chk_elf(unsigned char *e_idt)
@@ -45,7 +45,7 @@ void chk_elf(unsigned char *e_idt)
 }
 
 /**
- * prt_magic - the function that prints magic number 
+ * prt_magic - the function that prints magic number
  * @e_idt: string input
  *
  */
@@ -91,7 +91,7 @@ void prt_class(unsigned char *e_idt)
 }
 
 /**
- * prt_data - a function that prints data of elf 
+ * prt_data - a function that prints data of elf
  * @e_idt: string input
  */
 void prt_data(unsigned char *e_idt)
