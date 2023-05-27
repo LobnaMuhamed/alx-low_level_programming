@@ -186,7 +186,7 @@ void prt_osabi(unsigned char *e_idt)
 void prt_abi(unsigned char *e_idt)
 {
 	printf("  ABI Version:                       %d\n",
-	       e_ident[EI_ABIVERSION]);
+	       e_idt[EI_ABIVERSION]);
 }
 
 /**
@@ -228,7 +228,7 @@ void prt_type(unsigned int e_typing, unsigned char *e_idented)
  * @t_entry: input int
  * @t_ident: string input
  */
-void print_entry(unsigned long int t_entry, unsigned char *t_ident)
+void prt_entry(unsigned long int t_entry, unsigned char *t_ident)
 {
 	printf("  Entry point address:               ");
 
