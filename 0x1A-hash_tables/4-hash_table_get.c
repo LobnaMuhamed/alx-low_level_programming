@@ -14,10 +14,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (!ht || !key || (*key) == '\0')
 		return (NULL);
-	if (item != NULL)
+	while (item != NULL)
 	{
 		if (strcmp(item->key, key) == 0)
 			return (item->value);
+		item = item->next;
 	}
 	return (NULL);
 }
