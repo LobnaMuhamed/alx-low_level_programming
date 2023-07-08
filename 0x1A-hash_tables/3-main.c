@@ -8,11 +8,30 @@
  *
  * Return: Always EXIT_SUCCESS.
  */
-int main(void)
+int main()
 {
-    hash_table_t *ht;
+	char* strings[] = {"hetairas", "mentioner", "heliotropes", "neurospora", 
+		"depravement", "serafins", "stylist", "subgenera", 
+		"joyful", "synaphea", "redescribed", "urites", "dram", 
+		"vivency"};
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
-    return (EXIT_SUCCESS);
+	int num_strings = sizeof(strings) / sizeof(strings[0]);
+
+	unsigned long hash_table[100000] = {0}, hash_value;
+	int i;
+
+	for (i = 0; i < num_strings; i++)
+	{
+		hash_value = hash_djb2((unsigned char*)strings[i]);
+		if (hash_table[hash_value])
+		{
+			printf("Collision detected: %s collides with %s\n", strings[i], (char*)hash_table[hash_value]);
+		}
+		else
+		{
+			hash_table[hash_value] = (unsigned long)strings[i];
+		}
+	}
+
+	return 0;
 }
